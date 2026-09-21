@@ -2,9 +2,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Input")]
-    [SerializeField] private InputActionReference move;
-    [SerializeField] private InputActionReference jump;
     [Header("Variables")]
     [SerializeField] private float moveSpeed = 200;
     [SerializeField] private float jumpForce;
@@ -23,10 +20,18 @@ public class PlayerMovement : MonoBehaviour
     private bool canMove = true;
 
 
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-    static private void Init()
-    {
-        InputSystem.actions.Enable();
+        // [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        // static private void Init()
+        // {
+        //     InputSystem.actions.Enable();
+        // }
+
+    public void GetMove(InputAction.CallbackContext callbackContext){
+        moveDirection = callbackContext.ReadValue<float>();
+    }
+
+    public void GetJump(InputAction.CallbackContext callbackContext){
+Jump(callbackContext);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,14 +42,11 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
 
-        jump.action.started += Jump;
     }
 
     // Update is called once per frame
     void Update()
     {
-        moveDirection = move.action.ReadValue<float>();
-
         animator.SetFloat("MoveSpeed", Mathf.Abs(rgbd.linearVelocity.x));
         animator.SetFloat("VerticalSpeed", rgbd.linearVelocity.y);
         animator.SetBool("IsGrounded", IsGrounded());
@@ -101,11 +103,6 @@ public class PlayerMovement : MonoBehaviour
 
         return false;
 
-    }
-
-    private void OnDisable()
-    {
-        jump.action.started -= Jump;
     }
 
     public void TakeKnockback(float knockbackForce, float upwardsForce)

@@ -5928,7 +5928,7 @@ Transform:
   m_GameObject: {fileID: 324196575}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 1.5, z: 0}
+  m_LocalPosition: {x: 1.76, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5986,8 +5986,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dbd7bb0630c3d64a9c47e768b3debfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  move: {fileID: -2127133333486217035, guid: c5a6be54a07ab1549818e28a9b147ba7, type: 3}
-  jump: {fileID: -2768358248475811116, guid: c5a6be54a07ab1549818e28a9b147ba7, type: 3}
   moveSpeed: 300
   jumpForce: 400
   leftFoot: {fileID: 1833751708}
@@ -9706,9 +9704,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039395bcef6ebbe4f95ea068fa851981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
-  cameraTarget: {fileID: 324196578}
   cameraOffset: {x: 1, y: 1, z: -10}
   cameraSmoothing: 10
+  zoomPadding: 2
+  minZoom: 5
 --- !u!1 &522814370
 GameObject:
   m_ObjectHideFlags: 0

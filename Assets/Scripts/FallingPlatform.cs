@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class FallingPlatform : MonoBehaviour
 {
-    public float fallWait = 2f;
-    public float destroyWait = 1f;
+    private float fallWait = 2f;
+    private float destroyWait = 1f;
+   
 
-    bool isFalling;
-    Rigidbody2D rgbd; 
+    private bool isFalling;
+    private Rigidbody2D rgbd; 
     
     void Start()
     {
@@ -27,5 +28,9 @@ public class FallingPlatform : MonoBehaviour
         yield return new WaitForSeconds(fallWait);
         rgbd.bodyType = RigidbodyType2D.Dynamic;
         Destroy(gameObject, destroyWait);
+        
     }
+    
+
+   
 }

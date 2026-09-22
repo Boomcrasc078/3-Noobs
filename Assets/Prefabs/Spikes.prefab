@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe001da18dcfcd1419b35ef98d9a10f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamage
-  damage: 2
+  damage: 1
 --- !u!61 &7898994036082450074
 BoxCollider2D:
   m_ObjectHideFlags: 0

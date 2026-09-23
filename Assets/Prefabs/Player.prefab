@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 6889303705559886985}
   - component: {fileID: 812014147451854692}
   - component: {fileID: 1812038369435507010}
-  - component: {fileID: 5523963711549618164}
   - component: {fileID: 5745423392474027614}
   - component: {fileID: 896863042529617346}
   - component: {fileID: 7443563896029733885}
   - component: {fileID: 7190941692240804752}
   - component: {fileID: 3390388172240868227}
+  - component: {fileID: 774393011858669776}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -122,7 +122,7 @@ MonoBehaviour:
   raycastDistance: 0.25
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 1088
+    m_Bits: 3648
   jumpSFXs:
   - {fileID: 8300000, guid: 2094fd23be501824ebd5f6403de9c3d3, type: 3}
   - {fileID: 8300000, guid: 9b3551ac43ad3db44b49580170b73319, type: 3}
@@ -155,43 +155,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!70 &5523963711549618164
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519949750204178674}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: a396e86dfec6a4e40b4f17b003c7c93f, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.45396125}
-  m_Size: {x: 0.64, y: 0.76207757}
-  m_Direction: 0
 --- !u!95 &5745423392474027614
 Animator:
   serializedVersion: 7
@@ -406,6 +369,52 @@ MonoBehaviour:
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!61 &774393011858669776
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519949750204178674}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: a396e86dfec6a4e40b4f17b003c7c93f, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.005067885, y: 0.34676266}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.46280992, y: 0.6935253}
+  m_EdgeRadius: 0
 --- !u!1 &3800475790723044657
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +440,7 @@ Transform:
   m_GameObject: {fileID: 3800475790723044657}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.156, y: 0, z: 0}
+  m_LocalPosition: {x: 0.156, y: -0.11899996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2782,7 +2791,7 @@ Transform:
   m_GameObject: {fileID: 6391422974682338920}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.156, y: 0, z: 0}
+  m_LocalPosition: {x: -0.156, y: -0.119, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

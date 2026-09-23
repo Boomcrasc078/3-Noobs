@@ -108,6 +108,7 @@ Jump(callbackContext);
     public void TakeKnockback(float knockbackForce, float upwardsForce)
     {
         canMove = false;
+        rgbd.linearVelocity = Vector2.zero;
         rgbd.AddForce(new Vector2(knockbackForce, upwardsForce));
         Invoke(nameof(CanMoveAgain), 0.25f);
     }

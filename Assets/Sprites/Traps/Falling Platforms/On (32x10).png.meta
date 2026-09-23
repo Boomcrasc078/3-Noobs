@@ -139,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d25d1af963d5f042b5cc3eda9e9422e
-      internalID: -1170824245
+      spriteID: 65b2611d43d0946bfa305e8780013457
+      internalID: -293097503
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bf214723020d3647bd72e850f2fb135
-      internalID: 1281960429
+      spriteID: 8bf1a2ae872c14ff58ab577c5cb5e5a0
+      internalID: 1550966180
       vertices: []
       indices: 
       edges: []
@@ -183,8 +183,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dbaee338e799cd4bbea80df834d3459
-      internalID: 2013992917
+      spriteID: fe2c84d7128c54f688a873a117fcefd9
+      internalID: 1068034459
       vertices: []
       indices: 
       edges: []
@@ -193,7 +193,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e6e0b9536fafe614abdf95c9e881f6f5
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -203,12 +203,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":10.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":10.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       On (32x10)_0: -7184453141422777021
-      On (32x10)_1: -1170824245
-      On (32x10)_2: 1281960429
-      On (32x10)_3: 2013992917
+      On (32x10)_1: -293097503
+      On (32x10)_2: 1550966180
+      On (32x10)_3: 1068034459
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

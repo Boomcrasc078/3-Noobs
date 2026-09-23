@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EnemyBlock
   - Enemy
+  - Box
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - EnemyBlock
   - Player
   - Platform
-  - 
+  - Box
   - 
   - 
   - 

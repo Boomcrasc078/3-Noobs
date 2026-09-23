@@ -143,7 +143,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -402,7 +402,7 @@ MonoBehaviour:
     m_ActionId: 2d6f77e2-0e46-4b2d-8030-dd41d12ca215
     m_ActionName: 'Gameplay/Move[/Keyboard/a,/Keyboard/d]'
   m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Keyboard WASD
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

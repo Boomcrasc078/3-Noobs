@@ -175,5 +175,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8149b37a22b16f04999494ebd2b4c67d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Trampoline
-  jumpForce: 650
+  jumpForce: 900
   animator: {fileID: 4876343328921156159}

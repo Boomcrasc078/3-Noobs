@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677443507628016975}
   - component: {fileID: 7564271711087678008}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16)_43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,8 +103,8 @@ GameObject:
   - component: {fileID: 3691737072292733206}
   - component: {fileID: 2446335011865707886}
   - component: {fileID: 2557176112002431152}
-  m_Layer: 0
-  m_Name: Moving Platform (1)
+  m_Layer: 6
+  m_Name: "Moving Platform gR\xC5"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,7 +198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3651310249861869612}
   - component: {fileID: 1275283646520169141}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (16x16)_45
   m_TagString: Untagged
   m_Icon: {fileID: 0}

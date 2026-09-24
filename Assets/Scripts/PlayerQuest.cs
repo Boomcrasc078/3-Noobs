@@ -8,7 +8,7 @@ public class PlayerQuest : MonoBehaviour
     [SerializeField] private AudioClip pickupSFX;
     public int ApplesToCollect => applesToCollect;
     public int ApplesCollected => applesCollected;
-    int applesCollected = 0;
+    static int applesCollected = 0;
     private AudioSource audioSource;
 
     private void Start()

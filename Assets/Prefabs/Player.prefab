@@ -365,7 +365,7 @@ MonoBehaviour:
     m_ActionId: 2d6f77e2-0e46-4b2d-8030-dd41d12ca215
     m_ActionName: 'Gameplay/Move[/Keyboard/a,/Keyboard/d]'
   m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: Keyboard WASD
+  m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

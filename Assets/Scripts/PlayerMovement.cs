@@ -20,11 +20,11 @@ public class PlayerMovement : MonoBehaviour
     private bool canMove = true;
 
 
-        // [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-        // static private void Init()
-        // {
-        //     InputSystem.actions.Enable();
-        // }
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        static private void Init()
+        {
+            InputSystem.actions.Enable();
+        }
 
     public void GetMove(InputAction.CallbackContext callbackContext){
         moveDirection = callbackContext.ReadValue<float>();

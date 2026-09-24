@@ -1,13 +1,15 @@
 using UnityEngine;
 using TMPro;
+using Unity.Scripting.LifecycleManagement;
 
-public class PlayerQuest : MonoBehaviour
+public partial class PlayerQuest : MonoBehaviour
 {
     [SerializeField] int applesToCollect = 10;
     [SerializeField] private TMP_Text appleText;
     [SerializeField] private AudioClip pickupSFX;
     public int ApplesToCollect => applesToCollect;
     public int ApplesCollected => applesCollected;
+    [AutoStaticsCleanup]
     static int applesCollected = 0;
     private AudioSource audioSource;
 

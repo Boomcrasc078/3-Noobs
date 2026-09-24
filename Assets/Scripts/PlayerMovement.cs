@@ -20,18 +20,20 @@ public class PlayerMovement : MonoBehaviour
     private bool canMove = true;
 
 
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-        static private void Init()
-        {
-            InputSystem.actions.Enable();
-        }
+    // [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    // static private void Init()
+    // {
+    //     InputSystem.actions.Enable();
+    // }
 
-    public void GetMove(InputAction.CallbackContext callbackContext){
+    public void GetMove(InputAction.CallbackContext callbackContext)
+    {
         moveDirection = callbackContext.ReadValue<float>();
     }
 
-    public void GetJump(InputAction.CallbackContext callbackContext){
-Jump(callbackContext);
+    public void GetJump(InputAction.CallbackContext callbackContext)
+    {
+        Jump(callbackContext);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

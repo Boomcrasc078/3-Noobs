@@ -32,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Respawn()
     {
-        currentHealth = startingHealth;
+        currentHealth = startingHealth; 
         UpdateHealthbar();
         transform.position = spawnPosition.position;
         GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;

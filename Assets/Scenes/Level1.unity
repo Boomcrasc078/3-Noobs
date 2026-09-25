@@ -21642,6 +21642,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7443563896029733885, guid: 89838d90e901f4457b126ac227a300dd, type: 3}
+      propertyPath: appleText
+      value: 
+      objectReference: {fileID: 2041094520}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23748,6 +23752,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (2) Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6641579052098354878, guid: 935f68e76d36144d58a55ad924f5882e, type: 3}
+      propertyPath: appleText
+      value: 
+      objectReference: {fileID: 2041094520}
     - target: {fileID: 7376703448948351146, guid: 935f68e76d36144d58a55ad924f5882e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -39
@@ -53650,6 +53658,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8482791602564271011, guid: 388ec7c846ce24547be2755ad3de46be, type: 3}
+      propertyPath: appleText
+      value: 
+      objectReference: {fileID: 2041094520}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

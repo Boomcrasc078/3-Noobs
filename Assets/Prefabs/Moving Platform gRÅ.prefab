@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677443507628016975}
   - component: {fileID: 7564271711087678008}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Terrain (16x16)_43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,8 @@ GameObject:
   - component: {fileID: 3691737072292733206}
   - component: {fileID: 2446335011865707886}
   - component: {fileID: 2557176112002431152}
-  m_Layer: 6
+  - component: {fileID: 3488319130541320020}
+  m_Layer: 10
   m_Name: "Moving Platform gR\xC5"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +119,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7765292779878488428}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.3194008, y: -4.570799, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -158,7 +159,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.51, y: 0.33}
@@ -187,7 +188,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MovingPlatform
   target1: {fileID: 0}
   target2: {fileID: 0}
-  moveSpeed: 1
+  moveSpeed: 1.5
+--- !u!251 &3488319130541320020
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7765292779878488428}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &8982814256189183326
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3651310249861869612}
   - component: {fileID: 1275283646520169141}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Terrain (16x16)_45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
